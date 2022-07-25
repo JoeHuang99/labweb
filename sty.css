@@ -1,0 +1,299 @@
+html{
+    scroll-behavior: smooth;
+}
+#首頁 {
+    background: rgb(255, 248, 222);
+    justify-content: center;
+    height: 80vh;
+}
+#首頁 .photo {
+    width: 350px;
+    display:inline-block;
+}
+#首頁 h1 {
+    display:inline-block;
+    margin-top: 50px;
+    position: relative; /* 相对于浏览器窗口定位 */
+    left: 0px;     /* 距离浏览器左边0px */
+    top: 0px;      /* 距离浏览器上边0px */
+}
+#首頁 h2 {
+    display:inline-block;
+    position: relative; /* 相对于浏览器窗口定位 */
+}
+
+#專長 {
+    background: rgb(89, 89, 89);
+    justify-content: center;
+    height: 50vh;
+}
+#興趣 {
+    background: rgb(89, 89, 89);
+    justify-content: center;
+    height: 50vh;
+}
+#關於 {
+    background: rgb(89, 89, 89);
+    justify-content: center;
+    height: 50vh;
+}
+#作品 {
+    background: rgb(89, 89, 89);
+    justify-content: center;
+    height: 50vh;
+}
+#專長 h1 {
+    margin-top: 50px;
+    display:inline-block;
+    color: rgb(255, 255, 255);
+}
+#興趣 h1 {
+    margin-top: 50px;
+    display:inline-block;
+    color: rgb(255, 255, 255);
+}
+#關於 h1 {
+    margin-top: 50px;
+    display:inline-block;
+    color: rgb(255, 255, 255);
+}
+#作品 h1 {
+    margin-top: 50px;
+    display:inline-block;
+    color: rgb(255, 255, 255);
+}
+
+#首頁 .線 {
+    width: auto;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+#專長 .線 {
+    width: auto;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#興趣 .線 {
+    width: auto;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#關於 .線 {
+    width: auto;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+#作品 .線 {
+    width: auto;
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.導覽列 {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 0;
+}
+.按鈕 {
+    position:relative;
+    top:20px;
+    left:0px;
+    padding: 5px;
+    background-color: blanchedalmond;
+}
+.flex_container1 {
+    display:block; 
+    margin:auto;
+}
+.flex_container2 {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin:auto;
+    width: 70%;
+    padding: 10px;
+}
+.contact-github {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    opacity: 1;
+}
+.contact-FB {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    width: 90px;
+    opacity: 1;
+}
+.contact-github:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.contact-FB:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.Python {
+    left: 100;
+	right: 100;
+	top: 100;
+	bottom: 100;
+}
+
+ul.slides {
+    position: relative;
+    width: 600px;
+    height: 280px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+
+li.slide {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica;
+    font-size: 120px;
+    color: #fff;
+    transition: .5s transform ease-in-out;
+}
+  
+.slide:nth-of-type(1) {
+    background-color: #F2E205;
+    href: "https://www.google.com.tw/?hl=zh_TW"
+}
+  
+.slide:nth-of-type(2) {
+    background-color: #F25C05;
+    left: 100%;
+}
+  
+.slide:nth-of-type(3) {
+    background-color: #495F8C;
+    left: 200%;
+}
+  
+input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+  
+.controls-visible {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+  
+.controls-visible label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+}
+  
+.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1) {
+    background-color: #333;
+}
+  
+.slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2) {
+    background-color: #333;
+}
+  
+.slides input[type="radio"]:nth-of-type(3):checked ~ .controls-visible label:nth-of-type(3) {
+    background-color: #333;
+}
+  
+.slides input[type="radio"]:nth-of-type(1):checked ~ .slide {
+    transform: translatex(0%);
+}
+  
+  .slides input[type="radio"]:nth-of-type(2):checked ~ .slide {
+    transform: translatex(-100%);
+  }
+  
+  .slides input[type="radio"]:nth-of-type(3):checked ~ .slide {
+    transform: translatex(-200%);
+  }
+  
+  
+  /* Left/Right Button Classes Below */
+  
+  .navigator {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: none;
+  }
+  
+  .navigator i {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .slides input[type="radio"]:nth-of-type(1):checked ~ .navigator:nth-of-type(1) {
+    display: flex;
+  }
+  
+  .slides input[type="radio"]:nth-of-type(2):checked ~ .navigator:nth-of-type(2) {
+    display: flex;
+  }
+  
+  .slides input[type="radio"]:nth-of-type(3):checked ~ .navigator:nth-of-type(3) {
+    display: flex;
+  }
+
+
+@media all and (min-width: 480px) and (max-width: 1000px) {
+    #首頁 {
+        background: rgb(255, 248, 222);
+        justify-content: center;
+        height: 90vh;
+    }
+    #專長 {
+        background: rgb(89, 89, 89);
+        justify-content: center;
+        height: 60vh;
+    }
+    #興趣 {
+        background: rgb(89, 89, 89);
+        justify-content: center;
+        height: 60vh;
+    }
+    #關於 {
+        background: rgb(89, 89, 89);
+        justify-content: center;
+        height: 85vh;
+    }
+}
+
