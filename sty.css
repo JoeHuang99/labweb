@@ -183,8 +183,7 @@ html{
 }
 
 @media (min-height: 100px) and (max-height: 1000px) {
-    html {height: 100%;}
-    body {height: 100%;};
+    
     #首頁 {
         background: rgb(255, 248, 222);
         justify-content: center;
