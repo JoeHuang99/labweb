@@ -1,44 +1,33 @@
+
 html{
     scroll-behavior: smooth;
 }
 #首頁 {
     background: rgb(255, 248, 222);
-    justify-content: center;
-    height: 80vh;
-    display: flex;
 }
-#首頁 .photo {
-    width: 350px;
+.pic {
+    width: 100%;
+    max-width: 350px;
     display:inline-block;
 }
 #首頁 h1 {
     display:inline-block;
     margin-top: 50px;
-    position: relative; /* 相对于浏览器窗口定位 */
-    left: 0px;     /* 距离浏览器左边0px */
-    top: 0px;      /* 距离浏览器上边0px */
+    position: relative;
+    left: 0px;
+    top: 0px;
 }
 #首頁 h2 {
     display:inline-block;
     position: relative; /* 相对于浏览器窗口定位 */
 }
-
+#首頁 .線 {
+    width: auto;
+    height: 4px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+}
 #專長 {
-    background: rgb(89, 89, 89);
-    justify-content: center;
-    height: 50vh;
-}
-#興趣 {
-    background: rgb(89, 89, 89);
-    justify-content: center;
-    height: 50vh;
-}
-#關於 {
-    background: rgb(89, 89, 89);
-    justify-content: center;
-    height: 50vh;
-}
-#作品 {
     background: rgb(89, 89, 89);
     justify-content: center;
     height: 50vh;
@@ -48,33 +37,21 @@ html{
     display:inline-block;
     color: rgb(255, 255, 255);
 }
-#興趣 h1 {
-    margin-top: 50px;
-    display:inline-block;
-    color: rgb(255, 255, 255);
-}
-#關於 h1 {
-    margin-top: 50px;
-    display:inline-block;
-    color: rgb(255, 255, 255);
-}
-#作品 h1 {
-    margin-top: 50px;
-    display:inline-block;
-    color: rgb(255, 255, 255);
-}
-
-#首頁 .線 {
-    width: auto;
-    height: 4px;
-    background: rgb(0, 0, 0);
-    border-radius: 5px;
-}
 #專長 .線 {
     width: auto;
     height: 4px;
     background: rgb(255, 255, 255);
     border-radius: 5px;
+}
+#興趣 {
+    background: rgb(89, 89, 89);
+    justify-content: center;
+    height: 50vh;
+}
+#興趣 h1 {
+    margin-top: 50px;
+    display:inline-block;
+    color: rgb(255, 255, 255);
 }
 #興趣 .線 {
     width: auto;
@@ -82,11 +59,31 @@ html{
     background: rgb(255, 255, 255);
     border-radius: 5px;
 }
+#關於 {
+    background: rgb(89, 89, 89);
+    justify-content: center;
+    height: 50vh;
+}
+#關於 h1 {
+    margin-top: 50px;
+    display:inline-block;
+    color: rgb(255, 255, 255);
+}
 #關於 .線 {
     width: auto;
     height: 4px;
     background: rgb(255, 255, 255);
     border-radius: 5px;
+}
+#作品 {
+    background: rgb(89, 89, 89);
+    justify-content: center;
+    height: 50vh;
+}
+#作品 h1 {
+    margin-top: 50px;
+    display:inline-block;
+    color: rgb(255, 255, 255);
 }
 #作品 .線 {
     width: auto;
@@ -100,19 +97,15 @@ html{
     position: fixed;
     top: 0;
 }
-.按鈕 {
-    position:relative;
-    top:20px;
-    left:0px;
-    padding: 5px;
-    background-color: blanchedalmond;
-}
-.flex_container1 {
-    display:block; 
-    margin:auto;
-}
-.flex_container2 {
+
+.t {
     color: rgb(255, 255, 255);
+    text-align: left;
+    margin:auto;
+    width: 70%;
+    padding: 10px;
+}
+.lt {
     text-align: left;
     margin:auto;
     width: 70%;
@@ -142,17 +135,9 @@ html{
     transition: 0.5s;
     opacity: 0.5;
 }
-
-.Python {
-    left: 100;
-	right: 100;
-	top: 100;
-	bottom: 100;
+.item {
+    text-align: center;
 }
-
-
-
-
 
 @media all and (min-width: 480px) and (max-width: 1000px) {
     #首頁 {

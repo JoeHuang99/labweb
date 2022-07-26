@@ -13,9 +13,7 @@
         <link rel="stylesheet" href="sty.css">
         <!--匯入bootstrap javascript-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     </head>
     <body>
         <!--Nabbar導覽列-->
@@ -27,17 +25,17 @@
             <a href="#portfolio" class="btn btn-dark">PORTFOLIO</a>
         </nav>
         
-        <!--首頁-->
-        <section>
-            <div id="home"></div>
-            <div id="首頁">
-                <div class="text-center">
-                    <h1><b>Yu-Jiu Huang</b></h1>
-                    <div class="線"></div>
-                    <h2><b>An engineer who loves to develope games~OuOb🚀</b></h2>
-                    <div class="flex_container1">
+        <div class="container-fluid h-100">
+            <div id="首頁" class="row justify-content-centor h-100">
+                <!--首頁-->
+                <div id="home"></div>
+                <div class="col-12">
+                    <div class="item">
+                        <h1><b>Yu-Jiu Huang</b></h1>
+                        <div class="線"></div>
+                        <h2><b>An engineer who loves to develope games~OuOb🚀</b></h2>
                         <br/>
-                        <img src="0723.jpg" class="photo"></img>
+                        <img src="0723.jpg" class="pic"></img>
                         <br/><br/>
                         <div style="font-size: 24px">✔ A graduate student in the Institute of Multimedia Engineering at NYCU</div>
                         <div style="font-size: 24px">✔ Research Interests: <b>Computer Vision</b>, <b>Deep Learning</b>, and <b>Game Design</b></div>
@@ -47,87 +45,81 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <div id="extertise"></div>
-            <div id="專長">
-                <div class="text-center">
-                    <h1><b>Personal Expertise</b></h1>
-                    <div class="線"></div>
-                    <div class="flex_container2">
-                        <div style="font-size: 24px">➤Program languages, such as Python, C#, C/C++, Java</div>
-                        <div style="font-size: 24px">➤Digital art creation using CLIP Studio, Photoshop</div>
-                        <div style="font-size: 24px">➤Game design with Unity, RPGMV</div>
-                        <br/>
-                        <img src="img.png">
+            <div id="專長" class="row justify-content-centor h-100">
+                <div id="extertise"></div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="item">
+                            <h1><b>Personal Expertise</b></h1>
+                            <div class="線"></div>
+                            <div class="t" style="font-size: 24px">➤Program languages, such as Python, C#, C/C++, Java</div>
+                            <div class="t" style="font-size: 24px">➤Digital art creation using CLIP Studio, Photoshop</div>
+                            <div class="t" style="font-size: 24px">➤Game design with Unity, RPGMV</div>
+                            <div class="t" style="font-size: 24px">➤Data structures and algorithms</div>
+                            <br/>
+                            <img src="img.png" class="pic">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <div id="hobby"></div>
-            <div id="興趣">
-                <div class="text-center">
-                    <h1><b>Personal Hobby</b></h1>
-                    <div class="線"></div>
-                    <div class="flex_container2">
-                        <div style="font-size: 24px">➤Playing table tennis</div>
-                        <div style="font-size: 24px">➤Playing the piano and the guitar</div>
-                        <div style="font-size: 24px">➤Reading comics</div>
-                        <div style="font-size: 24px">➤Enjoying delicious food</div>
-                        <br/>
-                        <img src="img2.png">
+            <div id="興趣" class="row justify-content-centor h-100">
+                <div id="hobby"></div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="item">
+                            <h1><b>Personal Hobby</b></h1>
+                            <div class="線"></div>
+                            <div class="t" style="font-size: 24px">➤Playing table tennis</div>
+                            <div class="t" style="font-size: 24px">➤Playing the piano and the guitar</div>
+                            <div class="t" style="font-size: 24px">➤Reading comics</div>
+                            <div class="t" style="font-size: 24px">➤Enjoying delicious food</div>
+                            <br/>
+                            <img src="img2.png" class="pic">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <div id="about"></div>
-            <div id="關於">
-                <div class="text-center">
-                    <h1><b>About Me</b></h1>
-                    <div class="線"></div>
-                    <div class="flex_container2">
-                        <div style="font-size: 20px">Since I was a child, I have had the opportunity to surf the internet resources and cultivate the ability of independent learning. During high school, I ever participated in the course of program language which led me to the field of computer information. Since then I encouraged myself to become a computer engineer. Now, I hope that I can combine my professional knowledge and practical experience to invest in the AI ​​industry or the game industry to develop products that are useful to our society.</div>
-                        <br/>
-                        <div style="font-size: 20px">
-                            I enjoy overcoming challenges in my life that sharpen my grit and help me enhance my professional skills. I am curious about new things and love to explore them. There is no end to learning. Therefore, "Never too old to learn." is my motto.</div>
-                        <br/>
+            <div id="關於" class="row justify-content-centor h-100">
+                <div id="about"></div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="item">
+                            <h1><b>About Me</b></h1>
+                            <div class="線"></div>
+                            <div class="t" style="font-size: 20px">Since I was a child, I have had the opportunity to surf the internet resources and cultivate the ability of independent learning. During high school, I ever participated in the course of program language which led me to the field of computer information. Since then I encouraged myself to become a computer engineer. Now, I hope that I can combine my professional knowledge and practical experience to invest in the AI ​​industry or the game industry to develop products that are useful to our society.</div>
+                            <br/>
+                            <div class="t" style="font-size: 20px">
+                                I enjoy overcoming challenges in my life that sharpen my grit and help me enhance my professional skills. I am curious about new things and love to explore them. There is no end to learning. Therefore, "Never too old to learn." is my motto.</div>
+                            <br/>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section>
-            <div id="portfolio"></div>
-            <div id="作品">
-                <div class="text-center">
-                    <h1><b>Portfolio</b></h1>
-                    <div class="線"></div>
-                    <div class="flex_container2">
-                        <a href="https://www.youtube.com/watch?v=KfN6Av00KQ0"><div style="font-size: 24px">➤Automatic Manga Colorization</div></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.JOJOGame.EnglishLearning"><div style="font-size: 24px">➤High School English Words Review Tool</div></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.jojogame.shokoban"><div style="font-size: 24px">➤Sokoban Game</div></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.JOJOGame.Timer"><div style="font-size: 24px">➤Simple Timer</div></a>
-                        <br/>
-                        <div style="font-size: 24px"><b>More projects coming soon......</b></div>
-                    </div>
-                </div>   
+            <div id="作品" class="row justify-content-centor h-100">
+                <div id="portfolio"></div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="item">
+                            <h1><b>Portfolio</b></h1>
+                            <div class="線"></div>
+                            <a href="https://www.youtube.com/watch?v=KfN6Av00KQ0"><div class="lt" style="font-size: 24px">➤Automatic Manga Colorization</div></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.JOJOGame.EnglishLearning"><div class="lt" style="font-size: 24px">➤High School English Words Review Tool</div></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.jojogame.shokoban"><div class="lt" style="font-size: 24px">➤Sokoban Game</div></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.JOJOGame.Timer"><div class="lt" style="font-size: 24px">➤Simple Timer</div></a>
+                            <br/>
+                            <div class="t" style="font-size: 24px"><b>More projects coming soon......</b></div>
+                        </div>
+                    </div>   
+                </div>
             </div>
-        </section>
+        </div>
 
         
-        <script>
-            const menuBtn = document.querySelector('.menu-btn')
-            const navlinks = document.querySelector('.nav-links')
-            menuBtn.addEventListener('click', ()=>{
-                navlinks.classList.toggle('mobile-menu')
-            })
-        </script>
-        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     </body>
 </html>
