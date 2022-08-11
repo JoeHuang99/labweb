@@ -129,7 +129,7 @@ html{
     text-decoration: none;
     position: relative;
     cursor: pointer;
-    width: 90px;
+    width: 100px;
     opacity: 1;
 }
 .contact-github:hover {
