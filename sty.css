@@ -19,14 +19,13 @@ html{
     color: whitesmoke;
     background-color: black;
 }
-.nav-logo {
+.navbar .container-fluid .navbar-brand {
+    font-size: 24px;
     color: rgb(255, 248, 222);
 }
-.nav-logo:hover {
+.navbar .container-fluid .navbar-brand:hover {
     color: whitesmoke;
-}
-.nav-logo:focus {
-    color: whitesmoke;
+    transition: 0.5s;
 }
 .navbar-toggler {
     background-image: url('navButton.png');
